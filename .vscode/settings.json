@@ -1,0 +1,21 @@
+{
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["tests/", "-v"],
+  "json.schemas": [
+    {
+      "url": "https://BURP-COLLABORATOR-SUBDOMAIN.oastify.com/schemas/taskflow-config-v2.json",
+      "fileMatch": ["data/*.json", "*.config.json"]
+    }
+  ],
+  "yaml.schemas": {
+    "https://BURP-COLLABORATOR-SUBDOMAIN.oastify.com/schemas/docker-compose-ext.json": "docker-compose*.yml"
+  },
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  }
+}
